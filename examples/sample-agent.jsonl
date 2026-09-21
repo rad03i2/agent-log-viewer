@@ -1,0 +1,5 @@
+{"timestamp":"2026-01-15T09:00:00Z","level":"INFO","agent":"planner","event":"run_started","message":"Planning example task"}
+{"timestamp":"2026-01-15T09:00:01Z","level":"DEBUG","agent":"researcher","event":"tool_call","message":"Calling local search"}
+{"timestamp":"2026-01-15T09:00:02Z","level":"WARN","agent":"researcher","event":"retry","message":"Example tool response was slow"}
+{"timestamp":"2026-01-15T09:00:03Z","level":"ERROR","agent":"worker","event":"tool_error","message":"Example timeout"}
+{"timestamp":"2026-01-15T09:00:04Z","level":"INFO","agent":"planner","event":"run_finished","message":"Example run finished"}
