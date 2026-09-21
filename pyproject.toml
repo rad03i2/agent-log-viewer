@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-log-viewer"
+version = "1.0.0"
+description = "Local CLI for inspecting, filtering, summarizing, and following AI agent logs."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Radwan Abdulhadi Ahmed"}]
+keywords = ["logs", "agents", "cli", "observability", "jsonl"]
+
+[project.scripts]
+agent-log-viewer = "agent_log_viewer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
